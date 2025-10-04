@@ -20,11 +20,24 @@ public class MainActivity extends AppCompatActivity {
     EditText myEditText2;
     Button submitButton2;
 
+
+
+    TextView myTextView3;
+    EditText myEditText3;
+    Button submitButton3;
+    TextView myTextView4;
+    EditText myEditText4;
+    Button submitButton4;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
+
+        // Grouped variables for every button in the UI
+
         myTextView = (TextView) findViewById(R.id.greeting);
         myEditText = (EditText) findViewById((R.id.typeName));
         submitButton = (Button) findViewById(R.id.SubmitButton);
@@ -32,6 +45,19 @@ public class MainActivity extends AppCompatActivity {
         myTextView2 = (TextView) findViewById(R.id.greeting2);
         myEditText2 = (EditText) findViewById((R.id.typeName2));
         submitButton2 = (Button) findViewById(R.id.SubmitButton2);
+
+
+        myTextView3 = (TextView) findViewById(R.id.greeting1f);
+        myEditText3 = (EditText) findViewById((R.id.typeName1f));
+        submitButton3 = (Button) findViewById(R.id.SubmitButton1f);
+
+        myTextView4 = (TextView) findViewById(R.id.greeting2f);
+        myEditText4 = (EditText) findViewById((R.id.typeName2f));
+        submitButton4 = (Button) findViewById(R.id.SubmitButton2f);
+
+
+
+        // Giving every button the same function, just with different headers, easier to modify and troubleshoot
 
         submitButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -56,6 +82,32 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+
+        submitButton3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String name = myEditText3.getText().toString();
+                myTextView3.setText("Team 1 Fouls - "  + name);
+            }
+
+
+        });
+
+
+
+        submitButton4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String name = myEditText4.getText().toString();
+                myTextView4.setText("Team 2 Fouls - "  + name);
+            }
+
+
+        });
+
+
+// This takes letters or numbers, whichever you choose, and outputs it to change the respective lines, respectively.
+// Updates fouls and goals, for two teams. This is a universal app that can be with whichever score anyone desires, basketball, soccer, etc.
 
     }
 }
