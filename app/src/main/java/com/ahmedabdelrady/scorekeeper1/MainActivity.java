@@ -16,6 +16,9 @@ public class MainActivity extends AppCompatActivity {
     TextView myTextView;
     EditText myEditText;
     Button submitButton;
+    TextView myTextView2;
+    EditText myEditText2;
+    Button submitButton2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,15 +28,35 @@ public class MainActivity extends AppCompatActivity {
         myTextView = (TextView) findViewById(R.id.greeting);
         myEditText = (EditText) findViewById((R.id.typeName));
         submitButton = (Button) findViewById(R.id.SubmitButton);
+
+        myTextView2 = (TextView) findViewById(R.id.greeting2);
+        myEditText2 = (EditText) findViewById((R.id.typeName2));
+        submitButton2 = (Button) findViewById(R.id.SubmitButton2);
+
         submitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String name = myEditText.getText().toString();
-                myTextView.setText("Hello, " + name + "!");
-
+                myTextView.setText("Team 1 Score - "  + name);
             }
 
 
         });
+
+
+
+        submitButton2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String name = myEditText2.getText().toString();
+                myTextView2.setText("Team 2 Score - "  + name);
+            }
+
+
+        });
+
+
+
     }
 }
+

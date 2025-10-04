@@ -6,36 +6,45 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
 
-
-
     <TextView
+        android:id="@+id/greeting"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/greeting"
-        android:text="Hello, world"
-        />
+        android:text="Team 1 Score - " />
+
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/typeName"
-        android:hint="Type your name!"
+        android:hint="Type Score!"
         />
     <Button
+        android:id="@+id/SubmitButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/SubmitButton"
-        android:text="SUBMIT"
+        android:text="ENTER"
+        android:layout_marginBottom="20dp"
         />
 
+    <TextView
+        android:id="@+id/greeting2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Team 2 Score - " />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/typeName2"
+        android:hint="Type Score!"
 
 
+        />
 
-
-
-
-
-
-
-
+    <Button
+        android:id="@+id/SubmitButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ENTER" />
 
 </LinearLayout>
