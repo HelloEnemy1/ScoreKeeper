@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
     EditText myEditText4;
     Button submitButton4;
 
+    Button reset;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -54,6 +55,9 @@ public class MainActivity extends AppCompatActivity {
         myTextView4 = (TextView) findViewById(R.id.greeting2f);
         myEditText4 = (EditText) findViewById((R.id.typeName2f));
         submitButton4 = (Button) findViewById(R.id.SubmitButton2f);
+
+
+        reset = (Button) findViewById(R.id.reset);
 
 
 
@@ -105,6 +109,21 @@ public class MainActivity extends AppCompatActivity {
 
 
         });
+
+        reset.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                myTextView4.setText("Team 2 Fouls - "  );
+                myTextView3.setText("Team 2 Score - "  );
+                myTextView2.setText("Team 1 Fouls - "  );
+                myTextView.setText("Team 1 Score - "  );
+            }
+
+
+        });
+
+
+
 
 
 // This takes letters or numbers, whichever you choose, and outputs it to change the respective lines, respectively.
