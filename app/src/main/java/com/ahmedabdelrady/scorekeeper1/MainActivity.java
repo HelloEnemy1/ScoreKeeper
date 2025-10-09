@@ -76,6 +76,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String name = myEditText2.getText().toString();
                 myTextView2.setText("Team 2 Score - "  + name);
+
             }
 
 
