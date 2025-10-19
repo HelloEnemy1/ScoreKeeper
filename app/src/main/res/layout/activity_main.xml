@@ -10,13 +10,13 @@
         android:id="@+id/greeting"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Team 1 Score - " />
+        android:text="What is 5 + 5? " />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/typeName"
-        android:hint="Type Score!"
+        android:hint="Type Y / N!"
         />
     <Button
         android:id="@+id/SubmitButton"
@@ -26,98 +26,13 @@
         android:layout_marginBottom="20dp"
         />
 
-
     <TextView
-        android:id="@+id/greeting1f"
+        android:id="@+id/greeting1t"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Team 1 Fouls - " />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/typeName1f"
-        android:hint="Type Fouls!"
-        />
-    <Button
-        android:id="@+id/SubmitButton1f"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="ENTER"
-        android:layout_marginBottom="40dp"
-
-        />
+        android:text="Team 1 Score - " />
 
 
-
-
-
-        <TextView
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"
-            android:background="#4CAF50"
-            android:textSize="15sp"
-            android:gravity="center_horizontal"/>
-
-
-
-
-    <TextView
-        android:id="@+id/greeting2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Team 2 Score - " />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/typeName2"
-        android:hint="Type Score!"
-
-
-        />
-
-    <Button
-        android:id="@+id/SubmitButton2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="ENTER"
-        android:layout_marginBottom="20dp"
-        />
-
-
-
-
-
-
-
-    <TextView
-        android:id="@+id/greeting2f"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Team 2 Fouls - " />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/typeName2f"
-        android:hint="Type Fouls!"
-        />
-    <Button
-        android:id="@+id/SubmitButton2f"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="ENTER"
-        android:layout_marginBottom="20dp"
-        />
-
-    <Button
-        android:id="@+id/reset"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="RESET"
-        android:layout_marginBottom="20dp"
-        />
 
 
 
