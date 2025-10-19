@@ -16,18 +16,8 @@ public class MainActivity extends AppCompatActivity {
     TextView myTextView;
     EditText myEditText;
     Button submitButton;
-    TextView myTextView2;
-    EditText myEditText2;
-    Button submitButton2;
 
-
-
-    TextView myTextView3;
-    EditText myEditText3;
-    Button submitButton3;
-    TextView myTextView4;
-    EditText myEditText4;
-    Button submitButton4;
+    TextView myToast;
 
     Button reset;
     @Override
@@ -42,22 +32,10 @@ public class MainActivity extends AppCompatActivity {
         myTextView = (TextView) findViewById(R.id.greeting);
         myEditText = (EditText) findViewById((R.id.typeName));
         submitButton = (Button) findViewById(R.id.SubmitButton);
-
-        myTextView2 = (TextView) findViewById(R.id.greeting2);
-        myEditText2 = (EditText) findViewById((R.id.typeName2));
-        submitButton2 = (Button) findViewById(R.id.SubmitButton2);
+        myToast = (TextView) findViewById(R.id.greeting1t);
 
 
-        myTextView3 = (TextView) findViewById(R.id.greeting1f);
-        myEditText3 = (EditText) findViewById((R.id.typeName1f));
-        submitButton3 = (Button) findViewById(R.id.SubmitButton1f);
 
-        myTextView4 = (TextView) findViewById(R.id.greeting2f);
-        myEditText4 = (EditText) findViewById((R.id.typeName2f));
-        submitButton4 = (Button) findViewById(R.id.SubmitButton2f);
-
-
-        reset = (Button) findViewById(R.id.reset);
 
 
 
@@ -75,52 +53,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        submitButton2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String name = myEditText2.getText().toString();
-                myTextView2.setText("Team 2 Score - "  + name);
 
-            }
-
-
-        });
-
-
-
-        submitButton3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String name = myEditText3.getText().toString();
-                myTextView3.setText("Team 1 Fouls - "  + name);
-            }
-
-
-        });
-
-
-
-        submitButton4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String name = myEditText4.getText().toString();
-                myTextView4.setText("Team 2 Fouls - "  + name);
-            }
-
-
-        });
-
-        reset.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                myTextView4.setText("Team 2 Fouls - "  );
-                myTextView3.setText("Team 2 Score - "  );
-                myTextView2.setText("Team 1 Fouls - "  );
-                myTextView.setText("Team 1 Score - "  );
-            }
-
-
-        });
 
 
 
