@@ -127,7 +127,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 // This takes letters or numbers, whichever you choose, and outputs it to change the respective lines, respectively.
-// Updates fouls and goals, for two teams. This is a universal app that can be with whichever score anyone desires, basketball, soccer, etc.
+// Updates fouls and goals, for two teams. This is a universal app that can be with whichever score anyone desires, basketball, soccer, etc
 
     }
 }
